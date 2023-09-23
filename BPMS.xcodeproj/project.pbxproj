@@ -13,6 +13,13 @@
 		A1E695C92ABF07260081CF7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E695C82ABF07260081CF7A /* Preview Assets.xcassets */; };
 		A1E695CB2ABF07260081CF7A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E695CA2ABF07260081CF7A /* Persistence.swift */; };
 		A1E695CE2ABF07260081CF7A /* BPMS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1E695CC2ABF07260081CF7A /* BPMS.xcdatamodeld */; };
+		A1E695D62ABF07ED0081CF7A /* BPItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E695D42ABF07ED0081CF7A /* BPItem+CoreDataClass.swift */; };
+		A1E695D72ABF07ED0081CF7A /* BPItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E695D52ABF07ED0081CF7A /* BPItem+CoreDataProperties.swift */; };
+		A1E695D92ABF08F80081CF7A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E695D82ABF08F80081CF7A /* DetailView.swift */; };
+		A1E695DB2ABF09780081CF7A /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E695DA2ABF09780081CF7A /* Formatters.swift */; };
+		A1E695DF2ABF0B020081CF7A /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E695DE2ABF0B020081CF7A /* ReadView.swift */; };
+		A1E695E12ABF10900081CF7A /* ObservableClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E695E02ABF10900081CF7A /* ObservableClasses.swift */; };
+		A1E695E32ABF18900081CF7A /* EditDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E695E22ABF18900081CF7A /* EditDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,13 @@
 		A1E695C82ABF07260081CF7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1E695CA2ABF07260081CF7A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		A1E695CD2ABF07260081CF7A /* BPMS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BPMS.xcdatamodel; sourceTree = "<group>"; };
+		A1E695D42ABF07ED0081CF7A /* BPItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BPItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A1E695D52ABF07ED0081CF7A /* BPItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BPItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A1E695D82ABF08F80081CF7A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A1E695DA2ABF09780081CF7A /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		A1E695DE2ABF0B020081CF7A /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
+		A1E695E02ABF10900081CF7A /* ObservableClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableClasses.swift; sourceTree = "<group>"; };
+		A1E695E22ABF18900081CF7A /* EditDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,8 @@
 		A1E695B52ABF07240081CF7A = {
 			isa = PBXGroup;
 			children = (
+				A1E695D42ABF07ED0081CF7A /* BPItem+CoreDataClass.swift */,
+				A1E695D52ABF07ED0081CF7A /* BPItem+CoreDataProperties.swift */,
 				A1E695C02ABF07240081CF7A /* BPMS */,
 				A1E695BF2ABF07240081CF7A /* Products */,
 			);
@@ -61,6 +77,11 @@
 				A1E695CA2ABF07260081CF7A /* Persistence.swift */,
 				A1E695CC2ABF07260081CF7A /* BPMS.xcdatamodeld */,
 				A1E695C72ABF07260081CF7A /* Preview Content */,
+				A1E695D82ABF08F80081CF7A /* DetailView.swift */,
+				A1E695DA2ABF09780081CF7A /* Formatters.swift */,
+				A1E695DE2ABF0B020081CF7A /* ReadView.swift */,
+				A1E695E02ABF10900081CF7A /* ObservableClasses.swift */,
+				A1E695E22ABF18900081CF7A /* EditDetailView.swift */,
 			);
 			path = BPMS;
 			sourceTree = "<group>";
@@ -145,7 +166,14 @@
 			files = (
 				A1E695CB2ABF07260081CF7A /* Persistence.swift in Sources */,
 				A1E695C42ABF07240081CF7A /* ContentView.swift in Sources */,
+				A1E695DF2ABF0B020081CF7A /* ReadView.swift in Sources */,
+				A1E695E32ABF18900081CF7A /* EditDetailView.swift in Sources */,
+				A1E695DB2ABF09780081CF7A /* Formatters.swift in Sources */,
+				A1E695D72ABF07ED0081CF7A /* BPItem+CoreDataProperties.swift in Sources */,
+				A1E695D92ABF08F80081CF7A /* DetailView.swift in Sources */,
+				A1E695E12ABF10900081CF7A /* ObservableClasses.swift in Sources */,
 				A1E695C22ABF07240081CF7A /* BPMSApp.swift in Sources */,
+				A1E695D62ABF07ED0081CF7A /* BPItem+CoreDataClass.swift in Sources */,
 				A1E695CE2ABF07260081CF7A /* BPMS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,18 +12,18 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \BPItem.mdate, ascending: false)],
         animation: .default)
-    private var items: FetchedResults<Item>
+    private var items: FetchedResults<BPItem>
 
     var body: some View {
         NavigationView {
             List {
                 ForEach(items) { item in
                     NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                        DetailView(item: item)
                     } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                        Text("\(item.mdate!, formatter: dateYYYYMMDD) - \(item.sbp) - \(item.dbp)")
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -33,9 +33,14 @@ struct ContentView: View {
                     EditButton()
                 }
                 ToolbarItem {
-                    Button(action: addItem) {
+                    NavigationLink {
+                        EditDetailView()
+                    } label: {
                         Label("Add Item", systemImage: "plus")
                     }
+//                    Button(action: addItem) {
+//                        Label("Add Item", systemImage: "plus")
+//                    }
                 }
             }
             Text("Select an item")
@@ -44,8 +49,11 @@ struct ContentView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newItem = BPItem(context: viewContext)
+            newItem.mdate = Date()
+            newItem.sbp = 120 + Int.random(in: -20...20)
+            newItem.dbp = 80 + Int.random(in: -20...20)
+
 
             do {
                 try viewContext.save()
@@ -74,12 +82,6 @@ struct ContentView: View {
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
