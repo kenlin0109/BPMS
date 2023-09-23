@@ -73,7 +73,6 @@
 			children = (
 				A1E695C12ABF07240081CF7A /* BPMSApp.swift */,
 				A1E695C32ABF07240081CF7A /* ContentView.swift */,
-				A1E695C52ABF07260081CF7A /* Assets.xcassets */,
 				A1E695CA2ABF07260081CF7A /* Persistence.swift */,
 				A1E695CC2ABF07260081CF7A /* BPMS.xcdatamodeld */,
 				A1E695C72ABF07260081CF7A /* Preview Content */,
@@ -82,6 +81,7 @@
 				A1E695DE2ABF0B020081CF7A /* ReadView.swift */,
 				A1E695E02ABF10900081CF7A /* ObservableClasses.swift */,
 				A1E695E22ABF18900081CF7A /* EditDetailView.swift */,
+				A1E695C52ABF07260081CF7A /* Assets.xcassets */,
 			);
 			path = BPMS;
 			sourceTree = "<group>";

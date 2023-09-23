@@ -66,7 +66,7 @@ struct DetailView: View {
         //            })
         //        })
         .toolbar {
-            Button(isReadMode ? "Edit" : "Done") {
+            Button(isReadMode ? "Edit" : "Save") {
                 if !isReadMode {
                     
                     item.mdate = editMdate
